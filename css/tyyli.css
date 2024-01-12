@@ -1,0 +1,200 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+html, body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Baloo Bhaijaan 2', cursive, system-ui,-apple-system, BlinkMacSystemFont, Segoe UI;
+	color: #032F37;;
+	background-color: rgb(234, 247, 248);
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+text {
+	color: #032F37;
+}
+
+h4 {
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #032F37;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #95d1e0;
+	padding: 1rem;
+}
+
+.nav_links {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	letter-spacing: 2px;
+	z-index: 2;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.link {
+	transition: transform 0.2s;
+	font-size: 1.5em;
+}
+
+.link:hover {
+	transform: scale(1.2);
+}
+
+.nav_button{
+	display: none;
+}
+
+/*
+nav {
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+}
+
+nav li {
+	float: left;
+	width: 50%
+}
+
+nav a {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #95d1e0;;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #a4e4f2;
+}
+*/
+
+
+.flexin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+.clearfix::after { 
+	content: "";
+	clear: both;
+	display: table;
+}
+
+a {
+	text-decoration: none;
+	color: #032F37;
+}
+
+
+
+.galleria_kuva {
+	border-radius: 4px;
+}
+
+
+.text {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	padding: 2rem 0 2rem 0;
+}
+
+.content-container {
+	flex: 1 0 auto;
+}
+
+.content-container div a {
+	text-decoration: underline;
+}
+
+.content-container div a:hover {
+	color: #95d1e0;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 400px;
+  
+	box-sizing: border-box;
+	padding: var(--gap);
+	margin-inline: 128px;
+  
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.image-grid-2col {
+	grid-column: span 2;
+}
+
+.image-grid-2row {
+	grid-row: span 2;
+}
+
+.footer-container {
+	margin-top: 3rem;
+	flex-shrink: 0;
+	background-color: #95d1e0;
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+}
+
+.footer {
+	width: 80%;
+	height: 10vh;
+	background-color: #95d1e0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto; 
+
+}
+
+.footer-heading a:hover {
+	color:rgb(234, 247, 248);
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+	  --num-cols: 2;
+	  --row-height: 200px;
+	}
+  }
+
+
